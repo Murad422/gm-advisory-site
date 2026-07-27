@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гаджимурад Магомедрасулов — GM Deal Advisory</title>
+<meta name="description" content="GM Deal Advisory — оценка бизнеса, сопровождение сделок M&A, привлечение инвестиций. Гаджимурад Магомедрасулов, Дубай, ОАЭ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f2a4a;
+    --navy-dark:#0b1f38;
+    --ink:#1a1f26;
+    --body:#3f4650;
+    --muted:#6d7581;
+    --line:#e2e5e9;
+    --bg-soft:#f5f6f8;
+    --gold:#b08d4a;
+    --white:#ffffff;
+    --serif:'Source Serif 4', Georgia, serif;
+    --sans:'Inter', -apple-system, 'Segoe UI', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--body);background:var(--white);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{color:var(--ink);font-family:var(--sans)}
+  img{max-width:100%}
+
+  /* header */
+  header{position:sticky;top:0;z-index:40;background:var(--white);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.25}
+  .logo b{font-size:17px;font-weight:700;color:var(--navy);letter-spacing:.01em}
+  .logo span{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav.menu{display:flex;gap:30px;align-items:center}
+  nav.menu a{font-size:14px;font-weight:500;color:var(--body);text-decoration:none;transition:color .2s}
+  nav.menu a:hover{color:var(--navy)}
+  .nav-cta{background:var(--navy);color:#fff !important;padding:10px 22px;border-radius:4px;font-weight:600}
+  .nav-cta:hover{background:var(--navy-dark)}
+  @media(max-width:900px){nav.menu a:not(.nav-cta){display:none}}
+
+  /* hero */
+  .hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfbfc,#fff)}
+  .hero-grid{display:grid;grid-template-columns:1fr 400px;gap:72px;align-items:center;padding:72px 0}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px;padding:48px 0}}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .hero h1{font-family:var(--serif);font-size:clamp(34px,4.6vw,52px);font-weight:700;line-height:1.12;letter-spacing:-.01em;margin-bottom:8px}
+  .hero .role{font-size:17px;font-weight:600;color:var(--navy);margin-bottom:20px}
+  .hero .lede{font-size:17px;max-width:560px;margin-bottom:32px}
+  .btn{display:inline-block;padding:14px 30px;border-radius:4px;font-size:15px;font-weight:600;text-decoration:none;transition:.2s;text-align:center}
+  .btn-primary{background:var(--navy);color:#fff;border:1px solid var(--navy)}
+  .btn-primary:hover{background:var(--navy-dark)}
+  .btn-secondary{border:1px solid var(--line);color:var(--navy);background:#fff}
+  .btn-secondary:hover{border-color:var(--navy)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-note{margin-top:26px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+  .hero-note::before{content:"";width:8px;height:8px;border-radius:50%;background:#2e9e63;flex:none}
+  .photo-card{position:relative}
+  .photo-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:6px;box-shadow:0 24px 60px -24px rgba(15,42,74,.35)}
+  .photo-card::after{content:"";position:absolute;top:22px;left:22px;right:-22px;bottom:-22px;border:1px solid var(--line);border-radius:6px;z-index:-1}
+
+  /* metrics band */
+  .metrics{background:var(--navy);color:#fff}
+  .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:44px 0}
+  @media(max-width:760px){.metrics-grid{grid-template-columns:repeat(2,1fr);row-gap:36px}}
+  .metric{padding:0 32px;border-left:1px solid rgba(255,255,255,.18)}
+  .metric:first-child{border-left:none;padding-left:0}
+  @media(max-width:760px){.metric{padding:0 20px}.metric:nth-child(3){border-left:none;padding-left:0}}
+  .metric b{display:block;font-family:var(--serif);font-size:40px;font-weight:700;line-height:1.1;color:#fff}
+  .metric b i{font-style:normal;color:var(--gold)}
+  .metric span{display:block;margin-top:6px;font-size:13.5px;color:rgba(255,255,255,.75);line-height:1.5}
+
+  /* sections */
+  section{padding:88px 0}
+  .sec-eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+  .sec-title{font-family:var(--serif);font-size:clamp(28px,3.4vw,38px);font-weight:700;line-height:1.2;margin-bottom:20px;max-width:680px}
+  .sec-intro{max-width:680px;margin-bottom:44px;font-size:16.5px}
+
+  /* about */
+  .about-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:1000px}
+  @media(max-width:800px){.about-cols{grid-template-columns:1fr;gap:24px}}
+  .about-cols p{margin-bottom:18px}
+  .about-cols p:last-child{margin-bottom:0}
+  .about-facts{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px}
+  @media(max-width:800px){.about-facts{grid-template-columns:1fr}}
+  .fact{border:1px solid var(--line);border-radius:6px;padding:22px 24px;font-size:14.5px;line-height:1.6}
+  .fact b{display:block;color:var(--ink);font-size:15px;margin-bottom:4px}
+
+  /* services */
+  .svc-section{background:var(--bg-soft)}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media(max-width:800px){.svc-grid{grid-template-columns:1fr}}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:34px 32px;transition:box-shadow .25s,transform .25s}
+  .svc:hover{box-shadow:0 16px 40px -20px rgba(15,42,74,.25);transform:translateY(-3px)}
+  .svc .num{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--gold);margin-bottom:14px}
+  .svc h3{font-size:19px;font-weight:700;margin-bottom:10px}
+  .svc p{font-size:15px;color:var(--body)}
+  .svc ul{margin-top:14px;list-style:none}
+  .svc li{font-size:14px;color:var(--muted);padding:5px 0 5px 20px;position:relative}
+  .svc li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+  /* experience */
+  .exp-table{border-top:1px solid var(--line)}
+  .exp-row{display:grid;grid-template-columns:230px 1fr 190px;gap:28px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  @media(max-width:800px){.exp-row{grid-template-columns:1fr;gap:6px}}
+  .exp-row h3{font-size:17px;font-weight:700}
+  .exp-row p{font-size:15px}
+  .exp-row .sector{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right}
+  @media(max-width:800px){.exp-row .sector{text-align:left}}
+  .industries{margin-top:40px}
+  .industries h3{font-size:15px;font-weight:700;margin-bottom:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:13.5px;font-weight:500;color:var(--navy);background:var(--bg-soft);border:1px solid var(--line);border-radius:100px;padding:7px 16px}
+
+  /* value up */
+  .vu{background:var(--navy);color:#fff;border-radius:8px;padding:52px 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  @media(max-width:800px){.vu{grid-template-columns:1fr;padding:36px 28px}}
+  .vu .sec-eyebrow{margin-bottom:10px}
+  .vu h3{font-family:var(--serif);color:#fff;font-size:clamp(22px,3vw,30px);font-weight:700;line-height:1.25;margin-bottom:12px;max-width:640px}
+  .vu p{color:rgba(255,255,255,.8);font-size:15.5px;max-width:620px}
+  .vu .btn{background:#fff;color:var(--navy);border:none;white-space:nowrap}
+  .vu .btn:hover{background:#eef1f5}
+
+  /* insights */
+  .ins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:860px){.ins-grid{grid-template-columns:1fr}}
+  .ins{border:1px solid var(--line);border-radius:6px;padding:30px 28px;display:flex;flex-direction:column;background:#fff;transition:box-shadow .25s}
+  .ins:hover{box-shadow:0 16px 40px -20px rgba(15,42,74,.2)}
+  .ins .tag{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .ins h3{font-size:18px;font-weight:700;line-height:1.35;margin-bottom:10px}
+  .ins p{font-size:14.5px;flex:1}
+  .ins a{margin-top:18px;font-size:14px;font-weight:600;color:var(--navy);text-decoration:none}
+  .ins a:hover{text-decoration:underline}
+
+  /* education */
+  .edu-section{background:var(--bg-soft)}
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  @media(max-width:800px){.edu-grid{grid-template-columns:1fr;gap:40px}}
+  .edu-block h3{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:18px}
+  .edu-item{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 22px;margin-bottom:12px}
+  .edu-item b{display:block;color:var(--ink);font-size:15.5px;font-weight:600}
+  .edu-item span{font-size:13.5px;color:var(--muted)}
+  .lang-row{display:flex;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 22px;margin-bottom:10px;font-size:15px}
+  .lang-row b{color:var(--ink);font-weight:600}
+  .lang-row span{color:var(--muted)}
+  .intl{margin-top:26px;font-size:14.5px;color:var(--body);border-left:3px solid var(--gold);padding-left:18px}
+
+  /* contact */
+  .contact{background:var(--navy-dark);color:#fff;padding:96px 0}
+  .contact .sec-eyebrow{margin-bottom:14px}
+  .contact h2{font-family:var(--serif);color:#fff;font-size:clamp(28px,3.8vw,42px);font-weight:700;line-height:1.2;margin-bottom:18px;max-width:640px}
+  .contact .lead{color:rgba(255,255,255,.8);max-width:560px;margin-bottom:36px;font-size:16.5px}
+  .contact .mail{display:inline-block;font-size:22px;font-weight:600;color:#fff;text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:4px}
+  .contact .mail:hover{color:var(--gold)}
+  .soc-row{margin-top:40px;display:flex;gap:12px;flex-wrap:wrap}
+  .soc{width:46px;height:46px;border:1px solid rgba(255,255,255,.25);border-radius:6px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);transition:.2s;text-decoration:none}
+  .soc:hover{background:#fff;color:var(--navy);border-color:#fff}
+  .soc svg{width:18px;height:18px;fill:currentColor}
+  .contact .loc{margin-top:34px;font-size:13.5px;color:rgba(255,255,255,.6)}
+
+  footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.12);padding:24px 0}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:rgba(255,255,255,.55)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><b>GM Deal Advisory</b><span>Business Valuation · M&amp;A</span></a>
+    <nav class="menu">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#experience">Опыт</a>
+      <a href="#insights">Публикации</a>
+      <a class="nav-cta" href="#contact">Связаться</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">GM Deal Advisory · Dubai, UAE</div>
+      <h1>Гаджимурад Магомедрасулов</h1>
+      <div class="role">Founder &amp; Managing Partner — оценка бизнеса и сопровождение сделок M&amp;A</div>
+      <p class="lede">Помогаю собственникам частных компаний определить справедливую стоимость бизнеса, подготовить его к продаже или привлечению инвестиций и закрыть сделку на лучших условиях.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Обсудить задачу</a>
+        <a class="btn btn-secondary" href="#services">Услуги</a>
+      </div>
+      <div class="hero-note">Работаю с компаниями с выручкой от USD 1 млн — ОАЭ, СНГ, Ближний Восток</div>
+    </div>
+    <div class="photo-card">
+      <img src="photo.jpg" alt="Гаджимурад Магомедрасулов — GM Deal Advisory">
+    </div>
+  </div>
+</div>
+
+<div class="metrics">
+  <div class="wrap metrics-grid">
+    <div class="metric"><b>15<i>+</i></b><span>лет в предпринимательстве</span></div>
+    <div class="metric"><b>300<i>+</i></b><span>компаний получили консультационную поддержку</span></div>
+    <div class="metric"><b>$40<i>M+</i></b><span>совокупная стоимость проектов и сделок</span></div>
+    <div class="metric"><b>5</b><span>компаний основано с нуля</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-eyebrow">Обо мне</div>
+    <h2 class="sec-title">Смотрю на бизнес одновременно глазами собственника, инвестора и покупателя</h2>
+    <div class="about-cols">
+      <div>
+        <p>Более 15 лет занимаюсь предпринимательской деятельностью: с 2011 года основал пять компаний в различных отраслях экономики. С 2018 года консультирую собственников бизнеса по вопросам стратегии, роста капитализации и подготовки компаний к продаже.</p>
+        <p>За годы практики оказал консультационную поддержку более 300 компаниям, участвовал в проектах и сделках общей стоимостью свыше USD 40 млн.</p>
+      </div>
+      <div>
+        <p>Специализируюсь на работе с владельцами частных компаний с годовой выручкой от USD 1 млн до USD 10 млн: помогаю принимать стратегические решения на основе объективной оценки бизнеса.</p>
+        <p>Собственный предпринимательский опыт позволяет вести переговоры на равных с каждой стороной сделки — и находить цену, справедливую для всех.</p>
+      </div>
+    </div>
+    <div class="about-facts">
+      <div class="fact"><b>Фокус</b>Частные компании с выручкой USD 1–10 млн в год</div>
+      <div class="fact"><b>География</b>ОАЭ, страны СНГ и Ближнего Востока</div>
+      <div class="fact"><b>Методология</b>DCF, рыночные мультипликаторы, value bridge</div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section" id="services">
+  <div class="wrap">
+    <div class="sec-eyebrow">Услуги</div>
+    <h2 class="sec-title">Четыре направления работы</h2>
+    <p class="sec-intro">Каждый проект начинается с объективной оценки бизнеса — дальше выстраивается стратегия: продажа, покупка, рост стоимости или привлечение капитала.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="num">01</div>
+        <h3>Оценка бизнеса</h3>
+        <p>Независимая оценка стоимости компании для сделки, спора или стратегического решения.</p>
+        <ul>
+          <li>DCF-модель и рыночные мультипликаторы</li>
+          <li>Диапазон стоимости и допущения</li>
+          <li>Рекомендуемая цена сделки</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">02</div>
+        <h3>Продажа бизнеса (Sell-side)</h3>
+        <p>Подготовка компании к продаже и сопровождение сделки от первого разговора до закрытия.</p>
+        <ul>
+          <li>Предпродажная подготовка и упаковка</li>
+          <li>Поиск и проверка покупателей</li>
+          <li>Переговоры и сделочная документация</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">03</div>
+        <h3>Покупка бизнеса (Buy-side)</h3>
+        <p>Проверка и сопровождение приобретения: чтобы вы купили то, что вам показали.</p>
+        <ul>
+          <li>Due diligence, проверка на красные флаги</li>
+          <li>Оценка справедливой цены</li>
+          <li>Структурирование и закрытие сделки</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">04</div>
+        <h3>Рост стоимости и инвестиции</h3>
+        <p>Повышение капитализации компании и привлечение капитала под план роста.</p>
+        <ul>
+          <li>Диагностика value gap и план роста стоимости</li>
+          <li>Инвестиционные пакеты для инвесторов</li>
+          <li>Сопровождение переговоров с инвесторами</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-eyebrow">Опыт</div>
+    <h2 class="sec-title">Репрезентативные проекты</h2>
+    <div class="exp-table">
+      <div class="exp-row">
+        <h3>Продажа гостиничных активов</h3>
+        <p>Сопровождение сделок по продаже действующих отелей: подготовка, позиционирование, переговоры, закрытие.</p>
+        <div class="sector">Hospitality</div>
+      </div>
+      <div class="exp-row">
+        <h3>Оценка перед сделками</h3>
+        <p>Оценка компаний в производстве, ритейле, медицине и сервисе на основе DCF и мультипликаторов.</p>
+        <div class="sector">Valuation</div>
+      </div>
+      <div class="exp-row">
+        <h3>Привлечение инвесторов</h3>
+        <p>Инвестиционные пакеты и переговоры с инвесторами для частных компаний в СНГ и на Ближнем Востоке.</p>
+        <div class="sector">Capital Raising</div>
+      </div>
+      <div class="exp-row">
+        <h3>Рост стоимости перед продажей</h3>
+        <p>Программы роста капитализации: от диагностики value gap до подготовки компании к сделке.</p>
+        <div class="sector">Value Creation</div>
+      </div>
+      <div class="exp-row">
+        <h3>Стратегии масштабирования</h3>
+        <p>Стратегии роста для производственных предприятий, холдингов, ритейла и гостиничного бизнеса.</p>
+        <div class="sector">Strategy</div>
+      </div>
+    </div>
+    <div class="industries">
+      <h3>Отрасли, с которыми работал</h3>
+      <div class="chips">
+        <span class="chip">Производство</span>
+        <span class="chip">Торговые сети</span>
+        <span class="chip">Продуктовый ритейл</span>
+        <span class="chip">Холдинговые структуры</span>
+        <span class="chip">Медицина</span>
+        <span class="chip">Сервисные компании</span>
+        <span class="chip">Гостиничный бизнес</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="vu">
+      <div>
+        <div class="sec-eyebrow">Value Up Platform</div>
+        <h3>Основатель платформы оценки бизнеса Value Up</h3>
+        <p>Business Value Score по 20 факторам, план роста стоимости на 30/90/180 дней и 12 месяцев, еженедельный трекинг прогресса. Методология платформы — та же, что я применяю в сделках.</p>
+      </div>
+      <a class="btn" href="https://valueup.online/" target="_blank" rel="noopener">valueup.online</a>
+    </div>
+  </div>
+</section>
+
+<section id="insights" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-eyebrow">Публикации и медиа</div>
+    <h2 class="sec-title">Экспертиза, подтверждённая публично</h2>
+    <div class="ins-grid">
+      <div class="ins">
+        <div class="tag">Книга</div>
+        <h3>«Квартальный рывок. 7 способов заработать миллион на вашем бизнесе»</h3>
+        <p>Практическое руководство для собственников по росту прибыли и стоимости компании.</p>
+      </div>
+      <div class="ins">
+        <div class="tag">Аналитика</div>
+        <h3>Статьи и разборы: VC.ru, LinkedIn, Telegram</h3>
+        <p>Публикации по оценке бизнеса, стратегии и подготовке компаний к продаже.</p>
+        <a href="https://t.me/bigexpert1/" target="_blank" rel="noopener">Читать в Telegram →</a>
+      </div>
+      <div class="ins">
+        <div class="tag">Медиа</div>
+        <h3>Первый канал, НТВ, YouTube</h3>
+        <p>Участник телевизионных проектов на федеральных каналах, спикер отраслевых мероприятий и закрытых бизнес-сообществ.</p>
+        <a href="https://youtu.be/BkNqXChD8Ng" target="_blank" rel="noopener">Смотреть на YouTube →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu-section" id="education">
+  <div class="wrap">
+    <div class="sec-eyebrow">Бэкграунд</div>
+    <h2 class="sec-title">Образование и языки</h2>
+    <div class="edu-grid">
+      <div class="edu-block">
+        <h3>Образование</h3>
+        <div class="edu-item"><b>МАДИ</b><span>Московский автомобильно-дорожный государственный технический университет</span></div>
+        <div class="edu-item"><b>Cairo University</b><span>Факультет журналистики</span></div>
+        <div class="edu-item"><b>MBA — City Business School</b><span>Business Administration</span></div>
+        <p class="intl">Во время официального визита Президента Турции Реджепа Тайипа Эрдогана в Москву выполнял функции переводчика в рамках официальных мероприятий.</p>
+      </div>
+      <div class="edu-block">
+        <h3>Языки</h3>
+        <div class="lang-row"><b>Русский</b><span>родной</span></div>
+        <div class="lang-row"><b>Турецкий</b><span>свободный</span></div>
+        <div class="lang-row"><b>Арабский</b><span>свободный</span></div>
+        <div class="lang-row"><b>Английский</b><span>Upper-Intermediate (B2)</span></div>
+        <h3 style="margin-top:28px">Профессиональное развитие</h3>
+        <p style="font-size:14.5px">Корпоративные финансы, оценка бизнеса, переговоры, стратегическое управление, инвестиционный анализ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-eyebrow">Контакты</div>
+    <h2>Обсудим вашу задачу</h2>
+    <p class="lead">Оценка бизнеса, продажа или покупка компании, привлечение инвестиций — напишите, отвечу лично.</p>
+    <a class="mail" href="mailto:murad422@gmail.com">murad422@gmail.com</a>
+    <div class="soc-row">
+      <a class="soc" href="https://www.linkedin.com/in/gadzhimurad-m-and-a-advisor-227a68b3/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.16h4.56V23H.22V8.16zM8.34 8.16h4.37v2.02h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 6.99V23h-4.55v-7.21c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.87-2.77 3.8V23H8.34V8.16z"/></svg>
+      </a>
+      <a class="soc" href="https://t.me/bigexpert1/" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M23.94 3.02 20.3 20.72c-.27 1.24-.99 1.55-2 .96l-5.53-4.07-2.67 2.57c-.3.3-.54.54-1.11.54l.4-5.64L19.7 5.8c.45-.4-.1-.62-.69-.22L6.32 13.6.87 11.9c-1.18-.37-1.2-1.18.25-1.75L22.4 1.87c.99-.37 1.85.22 1.54 1.15z"/></svg>
+      </a>
+      <a class="soc" href="https://www.instagram.com/gadzhimurad.strateg/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.15A3.99 3.99 0 1 1 16 12a3.99 3.99 0 0 1-4 3.99zM19.85 5.6a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+      </a>
+      <a class="soc" href="https://www.threads.com/@gadzhimurad.strateg" target="_blank" rel="noopener" title="Threads" aria-label="Threads">
+        <svg viewBox="0 0 24 24"><path d="M12.19 24h-.01c-3.58-.02-6.33-1.2-8.18-3.51C2.36 18.44 1.5 15.59 1.47 12v-.01c.03-3.58.89-6.43 2.53-8.48C5.85 1.2 8.6.02 12.18 0h.02c2.75.02 5.04.72 6.83 2.1 1.68 1.29 2.86 3.13 3.51 5.47l-2.04.57c-1.1-3.96-3.9-5.99-8.31-6.02-2.92.02-5.13.94-6.56 2.73C4.29 6.53 3.6 8.94 3.58 12c.02 3.06.71 5.47 2.05 7.15 1.43 1.79 3.64 2.71 6.56 2.73 2.64-.02 4.38-.64 5.83-2.09 1.66-1.65 1.63-3.67 1.1-4.9-.31-.73-.88-1.33-1.64-1.79-.19 1.36-.62 2.46-1.29 3.29-.9 1.1-2.17 1.7-3.78 1.79-1.22.07-2.4-.22-3.31-.82-1.08-.7-1.71-1.78-1.78-3.02-.13-2.45 1.83-4.21 4.89-4.38.9-.05 1.75 0 2.55.13-.11-.64-.32-1.14-.64-1.51-.44-.5-1.12-.76-2.02-.77h-.03c-.72 0-1.7.2-2.33 1.13L8.35 8.79c.86-1.28 2.26-1.98 3.95-1.98h.04c2.82.02 4.5 1.75 4.67 4.77.1.04.19.08.29.13 1.32.62 2.29 1.56 2.79 2.72.7 1.62.77 4.27-1.36 6.38-1.86 1.85-4.11 2.68-7.54 2.7v-.01zm1.13-9.98c-.07 0-.14 0-.21.01-1.55.09-2.51.8-2.45 1.83.06 1.08 1.25 1.58 2.39 1.52 1.05-.06 2.42-.46 2.65-3.15-.58-.13-1.24-.2-1.94-.2z"/></svg>
+      </a>
+      <a class="soc" href="https://youtu.be/BkNqXChD8Ng" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+      </a>
+      <a class="soc" href="https://valueup.online/" target="_blank" rel="noopener" title="Value Up" aria-label="Value Up">
+        <svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm7.93 11h-3.19a15.7 15.7 0 0 0-1.3-6.04A10.02 10.02 0 0 1 19.93 11zM12 2.04c.9 1.03 2.35 3.6 2.72 8.96H9.28c.37-5.36 1.82-7.93 2.72-8.96zM4.07 13h3.19a15.7 15.7 0 0 0 1.3 6.04A10.02 10.02 0 0 1 4.07 13zm4.49-2H4.07a10.02 10.02 0 0 1 4.49-6.04A15.7 15.7 0 0 0 7.26 11h1.3zm.72 2h5.44c-.37 5.36-1.82 7.93-2.72 8.96-.9-1.03-2.35-3.6-2.72-8.96zm6.16 6.04A15.7 15.7 0 0 0 16.74 13h3.19a10.02 10.02 0 0 1-4.49 6.04z"/></svg>
+      </a>
+    </div>
+    <div class="loc">Dubai, United Arab Emirates · Работаю с клиентами в ОАЭ, СНГ и на Ближнем Востоке</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 GM Deal Advisory</div>
+    <div>Gadzhimurad Magomedrasulov · Dubai, UAE</div>
+  </div>
+</footer>
+
+</body>
+</html>
