@@ -277,7 +277,7 @@ document.querySelector('.cform').addEventListener('submit',async function(e){
   var f=this,b=f.querySelector('button'),n=f.querySelector('.fnote'),ru=document.documentElement.lang==='ru';
   b.disabled=true;b.textContent=ru?'Отправляю…':'Sending…';
   try{
-    var r=await fetch('https://formsubmit.co/ajax/murad422@gmail.com',{
+    var r=await fetch('https://formsubmit.co/ajax/cef8fbf13d92c2186499e72b9094f0c2',{
       method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
       body:JSON.stringify({name:f.name.value,contact:f.contact.value,message:f.message.value,_subject:f.dataset.subject,_template:'table',_captcha:'false'})});
     if(!r.ok)throw 0;
