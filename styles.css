@@ -209,3 +209,23 @@ html,body{overflow-x:hidden}
 .fnote.err{color:#f0a9a9}
 .contact .cform button{background:#fff;color:var(--navy)}
 .contact .cform button:hover{background:var(--gold);color:#fff}
+
+/* cases */
+.cases-section{background:var(--bg-soft);border-bottom:1px solid var(--line)}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.case-grid{grid-template-columns:1fr}}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:6px;padding:32px 30px;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.ccard:hover{box-shadow:0 16px 40px -20px rgba(15,42,74,.25);transform:translateY(-3px)}
+.ccard .meta{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ccard h3{font-size:19px;font-weight:700;margin-bottom:4px}
+.ccard .csub{font-size:14px;color:var(--muted);margin-bottom:16px}
+.ccard ul{list-style:none;border-top:1px solid var(--line);padding-top:14px}
+.ccard li{font-size:14px;color:var(--body);padding:6px 0 6px 20px;position:relative;line-height:1.55}
+.ccard li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+/* contact steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:0 0 40px}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.step{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:18px 20px}
+.step b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700}
+.step span{font-size:14px;color:rgba(255,255,255,.85);line-height:1.55}

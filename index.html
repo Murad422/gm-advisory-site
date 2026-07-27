@@ -19,6 +19,7 @@
     <a class="logo" href="#top"><b>GM Deal Advisory</b><span>Business Valuation · M&amp;A</span></a>
     <nav class="menu">
       <a href="#about">Обо мне</a>
+      <a href="#cases">Кейсы</a>
       <a href="#services">Услуги</a>
       <a href="#experience">Опыт</a>
       <a href="#insights">Публикации</a>
@@ -55,6 +56,47 @@
     <div class="metric"><b>5</b><span>компаний основано с нуля</span></div>
   </div>
 </div>
+
+
+<section class="cases-section" id="cases">
+  <div class="wrap">
+    <div class="sec-eyebrow">Кейсы</div>
+    <h2 class="sec-title">Результаты, не обещания</h2>
+    <p class="sec-intro">Три реальных мандата — цифры без прикрас.</p>
+    <div class="case-grid">
+      <div class="ccard">
+        <div class="meta">01 · Транспорт · Дубай</div>
+        <h3>Премиальный автопарк</h3>
+        <p class="csub">34 автомобиля, выручка AED 4.75M в год</p>
+        <ul>
+          <li>Определена справедливая стоимость на базе DCF + рыночных мультипликаторов</li>
+          <li>Собран полный пакет: valuation report, Value Bridge, due diligence questionnaire (51 пункт), NDA, Engagement Letter</li>
+          <li>Диапазон справедливой стоимости AED 8.5–10M, рекомендованный listing anchor AED 11–12M</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <div class="meta">02 · Медицина · Business Bay</div>
+        <h3>Клиника эстетической медицины</h3>
+        <p class="csub">Подготовка к продаже</p>
+        <ul>
+          <li>Полный пакет документов на продажу: Valuation Report (RU + EN), финансовая модель, Asset Schedule, Value Bridge</li>
+          <li>Итоговый диапазон стоимости AED 5.5–7M</li>
+          <li>От первого разговора до готового инвесторского пакета — полный цикл документов, без затягивания</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <div class="meta">03 · Ресторан · ОАЭ</div>
+        <h3>Ресторанный бизнес</h3>
+        <p class="csub">Подготовка к продаже</p>
+        <ul>
+          <li>Инвестиционный меморандум и полная упаковка под сделку</li>
+          <li>Диапазон запрашиваемой цены AED 2.8–3.7M, обоснован сравнительным анализом</li>
+          <li>Разобраны реальные риски сделки — не глянцевая презентация, а рабочий документ для переговоров</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap">
@@ -241,15 +283,20 @@
 <section class="contact" id="contact">
   <div class="wrap">
     <div class="sec-eyebrow">Контакты</div>
-    <h2>Обсудим вашу задачу</h2>
-    <p class="lead">Оценка бизнеса, продажа или покупка компании, привлечение инвестиций — заполните форму, отвечу лично.</p>
+    <h2>Обсудим вашу задачу — 20 минут, без обязательств</h2>
+    <p class="lead">Оценка бизнеса, продажа, покупка или привлечение инвестиций — расскажите в двух словах, что у вас происходит. Отвечаю лично, обычно в течение рабочего дня.</p><div class="steps">
+      <div class="step"><b>1</b><span>Смотрю вашу ситуацию — 1 день</span></div>
+      <div class="step"><b>2</b><span>Звонок 20 минут — обсуждаем задачу и реалистичный диапазон</span></div>
+      <div class="step"><b>3</b><span>Если есть смысл работать дальше — присылаю объём и стоимость</span></div>
+    </div>
+    
     <form class="cform" data-subject="Заявка с сайта GM Deal Advisory">
       <div class="frow">
         <input type="text" name="name" placeholder="Ваше имя" required>
         <input type="text" name="contact" placeholder="Email или телефон" required>
       </div>
       <textarea name="message" rows="5" placeholder="Коротко о задаче: оценка, продажа или покупка бизнеса, инвестиции…" required></textarea>
-      <button class="btn btn-primary" type="submit">Отправить</button>
+      <button class="btn btn-primary" type="submit">Обсудить задачу →</button>
       <div class="fnote"></div>
     </form>
     <div class="soc-row">
@@ -283,7 +330,7 @@ document.querySelector('.cform').addEventListener('submit',async function(e){
     if(!r.ok)throw 0;
     f.reset();n.className='fnote ok';n.textContent=ru?'Спасибо! Сообщение отправлено — отвечу лично в ближайшее время.':'Thank you! Your message has been sent — I will reply personally shortly.';
   }catch(_){n.className='fnote err';n.textContent=ru?'Не получилось отправить. Напишите мне в LinkedIn или Threads (иконки ниже).':'Could not send. Please reach me on LinkedIn or Threads (icons below).'}
-  b.disabled=false;b.textContent=ru?'Отправить':'Send';
+  b.disabled=false;b.textContent=ru?'Обсудить задачу →':'Discuss your case →';
 });
 </script>
 </body>

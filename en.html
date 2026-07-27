@@ -19,6 +19,7 @@
     <a class="logo" href="#top"><b>GM Deal Advisory</b><span>Business Valuation · M&amp;A</span></a>
     <nav class="menu">
       <a href="#about">About</a>
+      <a href="#cases">Cases</a>
       <a href="#services">Services</a>
       <a href="#experience">Experience</a>
       <a href="#insights">Insights</a>
@@ -55,6 +56,47 @@
     <div class="metric"><b>5</b><span>companies founded from scratch</span></div>
   </div>
 </div>
+
+
+<section class="cases-section" id="cases">
+  <div class="wrap">
+    <div class="sec-eyebrow">Case Studies</div>
+    <h2 class="sec-title">Results, not promises</h2>
+    <p class="sec-intro">Three real mandates — the numbers, unvarnished.</p>
+    <div class="case-grid">
+      <div class="ccard">
+        <div class="meta">01 · Transport · Dubai</div>
+        <h3>Premium car fleet</h3>
+        <p class="csub">34 vehicles, AED 4.75M annual revenue</p>
+        <ul>
+          <li>Fair value established using DCF + market multiples</li>
+          <li>Full package delivered: valuation report, Value Bridge, 51-item due diligence questionnaire, NDA, Engagement Letter</li>
+          <li>Fair value range AED 8.5–10M, recommended listing anchor AED 11–12M</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <div class="meta">02 · Healthcare · Business Bay</div>
+        <h3>Aesthetic medicine clinic</h3>
+        <p class="csub">Prepared for sale</p>
+        <ul>
+          <li>Complete sale package: Valuation Report (RU + EN), financial model, Asset Schedule, Value Bridge</li>
+          <li>Final value range AED 5.5–7M</li>
+          <li>From the first conversation to an investor-ready package — the full document cycle, no dragging</li>
+        </ul>
+      </div>
+      <div class="ccard">
+        <div class="meta">03 · Restaurant · UAE</div>
+        <h3>Restaurant business</h3>
+        <p class="csub">Prepared for sale</p>
+        <ul>
+          <li>Investment memorandum and full deal packaging</li>
+          <li>Asking price range AED 2.8–3.7M, supported by comparative analysis</li>
+          <li>Real deal risks addressed — a working negotiation document, not a glossy deck</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap">
@@ -241,15 +283,20 @@
 <section class="contact" id="contact">
   <div class="wrap">
     <div class="sec-eyebrow">Contact</div>
-    <h2>Let's discuss your case</h2>
-    <p class="lead">Business valuation, selling or buying a company, raising capital — fill in the form and I will reply personally.</p>
+    <h2>Let's discuss your case — 20 minutes, no strings attached</h2>
+    <p class="lead">Business valuation, selling, buying or raising capital — tell me in a couple of sentences what is going on. I reply personally, usually within one business day.</p><div class="steps">
+      <div class="step"><b>1</b><span>I review your situation — 1 day</span></div>
+      <div class="step"><b>2</b><span>A 20-minute call — we discuss the case and a realistic range</span></div>
+      <div class="step"><b>3</b><span>If it makes sense to proceed — I send the scope and the fee</span></div>
+    </div>
+    
     <form class="cform" data-subject="Enquiry from GM Deal Advisory website">
       <div class="frow">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="text" name="contact" placeholder="Email or phone" required>
       </div>
       <textarea name="message" rows="5" placeholder="Briefly about your case: valuation, selling or buying a business, capital raise…" required></textarea>
-      <button class="btn btn-primary" type="submit">Send</button>
+      <button class="btn btn-primary" type="submit">Discuss your case →</button>
       <div class="fnote"></div>
     </form>
     <div class="soc-row">
@@ -283,7 +330,7 @@ document.querySelector('.cform').addEventListener('submit',async function(e){
     if(!r.ok)throw 0;
     f.reset();n.className='fnote ok';n.textContent=ru?'Спасибо! Сообщение отправлено — отвечу лично в ближайшее время.':'Thank you! Your message has been sent — I will reply personally shortly.';
   }catch(_){n.className='fnote err';n.textContent=ru?'Не получилось отправить. Напишите мне в LinkedIn или Threads (иконки ниже).':'Could not send. Please reach me on LinkedIn or Threads (icons below).'}
-  b.disabled=false;b.textContent=ru?'Отправить':'Send';
+  b.disabled=false;b.textContent=ru?'Обсудить задачу →':'Discuss your case →';
 });
 </script>
 </body>
