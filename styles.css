@@ -194,3 +194,16 @@ html,body{overflow-x:hidden}
   .logo span{display:none}
   .logo b{white-space:nowrap}
 }
+
+/* contact form */
+.cform{max-width:620px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.frow{grid-template-columns:1fr}}
+.cform input,.cform textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.25);border-radius:4px;color:#fff;font-family:var(--sans);font-size:15px;padding:13px 16px;margin-bottom:12px;outline:none;transition:border-color .2s;resize:vertical}
+.cform input::placeholder,.cform textarea::placeholder{color:rgba(255,255,255,.45)}
+.cform input:focus,.cform textarea:focus{border-color:var(--gold);background:rgba(255,255,255,.09)}
+.cform button{width:auto;min-width:200px;cursor:pointer;border:none;font-family:var(--sans)}
+.cform button:disabled{opacity:.6;cursor:default}
+.fnote{margin-top:14px;font-size:14.5px}
+.fnote.ok{color:#7fd6a2}
+.fnote.err{color:#f0a9a9}
