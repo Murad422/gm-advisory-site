@@ -207,3 +207,5 @@ html,body{overflow-x:hidden}
 .fnote{margin-top:14px;font-size:14.5px}
 .fnote.ok{color:#7fd6a2}
 .fnote.err{color:#f0a9a9}
+.contact .cform button{background:#fff;color:var(--navy)}
+.contact .cform button:hover{background:var(--gold);color:#fff}
