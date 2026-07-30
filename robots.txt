@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gm-deal-advisory.onrender.com/sitemap.xml
