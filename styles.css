@@ -163,10 +163,13 @@
   body{font-size:15px}
   section{padding:56px 0}
   .wrap{padding:0 18px}
-  .nav{height:60px}
-  .logo b{font-size:15px}
+  .nav{height:60px;gap:8px}
+  nav.menu{gap:8px}
+  .logo b{font-size:13px}
   .logo span{font-size:10px}
-  .nav-cta{padding:8px 14px;font-size:13px}
+  .nav-cta{padding:7px 12px;font-size:12px}
+  .lang-sw{font-size:11px;margin-left:0}
+  .lang-sw b,.lang-sw a{padding:5px 9px}
   .hero-grid{padding:36px 0;gap:32px}
   .hero h1{font-size:34px}
   .hero .role{font-size:15px}
