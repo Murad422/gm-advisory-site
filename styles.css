@@ -245,5 +245,5 @@ html,body{overflow-x:hidden}
 /* video */
 .video-block{margin-top:44px}
 .video-title{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:16px}
-.video-wrap{position:relative;aspect-ratio:9/16;max-width:320px;border-radius:6px;overflow:hidden;background:#0b1f38;box-shadow:0 24px 60px -28px rgba(15,42,74,.4)}
+.video-wrap{position:relative;aspect-ratio:16/9;max-width:860px;border-radius:6px;overflow:hidden;background:#0b1f38;box-shadow:0 24px 60px -28px rgba(15,42,74,.4)}
 .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
