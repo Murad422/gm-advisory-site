@@ -247,3 +247,17 @@ html,body{overflow-x:hidden}
 .video-title{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:16px}
 .video-wrap{position:relative;aspect-ratio:16/9;max-width:860px;border-radius:6px;overflow:hidden;background:#0b1f38;box-shadow:0 24px 60px -28px rgba(15,42,74,.4)}
 .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* value up delta cases */
+.delta-section{background:var(--bg-soft);border-bottom:1px solid var(--line)}
+.delta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.delta-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.delta-grid{grid-template-columns:1fr}}
+.dcard{background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px 24px;transition:box-shadow .25s,transform .25s}
+.dcard:hover{box-shadow:0 16px 40px -22px rgba(15,42,74,.22);transform:translateY(-2px)}
+.dlabel{font-size:12.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.drow{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+.drow b{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--ink)}
+.drow b.hl{color:var(--navy)}
+.drow i{font-style:normal;color:var(--gold);font-size:15px;margin:0 2px}
+.dcard p{font-size:14px;color:var(--body);line-height:1.6}
